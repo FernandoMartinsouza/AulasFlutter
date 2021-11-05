@@ -1,0 +1,145 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+
+/* EXERCÍCIO 2 
+
+void main() {
+  runApp(
+    Center(
+      child: Text(
+        'Fernando Martins de Souza',
+        textDirection: TextDirection.ltr,
+        style: TextStyle(
+          color: Colors.pink,
+          fontSize: 40,
+          fontWeight: FontWeight.bold,
+          backgroundColor: Colors.white,
+        ),
+      ),
+    ),
+  );
+} */
+
+
+
+/* EXERCÍCIO 3 
+
+
+void main() {
+  String nome = 'GALERINHA';
+  runApp(
+    Center(
+      child: RichText(
+        textDirection: TextDirection.ltr,
+        text: TextSpan(
+          text: "Olá, ",
+          style: TextStyle(
+            color: Colors.green,
+            fontSize: 30,
+            fontWeight: FontWeight.bold,
+            backgroundColor: Colors.white,
+          ),
+          children: [
+            TextSpan(
+              text: '$nome',
+              style: TextStyle(
+                color: Colors.blueGrey,
+                decoration: TextDecoration.underline,
+                decorationColor: Colors.white,
+                decorationStyle: TextDecorationStyle.double,
+              ),
+            ),
+            TextSpan(
+              text: '! \n\nExcelente dia! \n\nHoje é sexta feira =D',
+            ),
+          ],
+        ),
+      ),
+    ),
+  );
+} */
+
+
+
+
+ /*EXERCÍCIO 4
+void main() {
+  runApp(
+    Row(
+      textDirection: TextDirection.ltr,
+      children: [
+        Expanded(
+          child: FittedBox(
+            fit: BoxFit.contain,
+            child: Image(
+              image: NetworkImage(
+                'https://picsum.photos/250?image=10',
+              ),
+            ),
+          ),
+        ),
+        Expanded(
+          child: FittedBox(
+            fit: BoxFit.contain,
+            child: Image(
+              image: NetworkImage(
+                'https://picsum.photos/250?image=25',
+              ),
+            ),
+          ),
+        ),
+        Expanded(
+          child: FittedBox(
+            fit: BoxFit.contain,
+            child: Image(
+              image: NetworkImage(
+                'https://picsum.photos/250?image=15',
+              ),
+            ),
+          ),
+        ),
+      ],
+    ),
+  );
+}
+*/
+
+/* EXERCICIO 5
+void main() {
+  runApp(
+    Column(
+      textDirection: TextDirection.ltr,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Expanded(
+          child: FittedBox(
+            fit: BoxFit.contain, // Permite aumentar o tamanho do logo.
+            child: const FlutterLogo(),
+          ),
+        ),
+        Expanded(
+          child: FittedBox(
+            fit: BoxFit.contain,
+            child: Image(
+              image: NetworkImage(
+                'https://picsum.photos/250?image=9',
+              ),
+            ),
+          ),
+        ),
+        Text(
+          'Imagens google flutter Fernando.',
+          textDirection: TextDirection.ltr,
+          style: TextStyle(
+            color: Colors.blue,
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            backgroundColor: Colors.white,
+          ),
+        ),
+      ],
+    ),
+  );
+}*/
